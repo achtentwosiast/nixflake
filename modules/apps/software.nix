@@ -18,6 +18,7 @@ in{
     pwvucontrol
     awww
     plan9port
+    xwayland-satellite
   ];
   # Check https://search.nixos.org/packages to see which packages are available
 }
