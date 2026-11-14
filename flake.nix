@@ -27,6 +27,7 @@
         inputs.home-manager.nixosModules.home-manager
         ./profile/mac/hardware.nix
         ./profile/mac/configuration.nix
+	./pass.nix
         ./compose.nix
       ];
     };
@@ -34,6 +35,7 @@
       specialArgs = { inherit inputs system settings; };
       modules = [
         inputs.home-manager.nixosModules.home-manager
+	./pass.nix
         ./profile/lenovo/hardware.nix
         ./profile/lenovo/configuration.nix
         ./compose.nix
