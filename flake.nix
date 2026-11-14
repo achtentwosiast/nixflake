@@ -21,16 +21,16 @@
     # Having more than one configuration allows you to use the same
     # flake on multiple devices or for different purposes
 
-    nixosConfigurations.workstation = inputs.nixpkgs.lib.nixosSystem {
+    nixosConfigurations.mac = inputs.nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs system settings; };
       modules = [
         inputs.home-manager.nixosModules.home-manager
-        ./profile/workstation/hardware.nix
-        ./profile/workstation/configuration.nix
+        ./profile/mac/hardware.nix
+        ./profile/mac/configuration.nix
         ./compose.nix
       ];
     };
-    nixosConfigurations.home = inputs.nixpkgs.lib.nixosSystem {
+    nixosConfigurations.lenovo = inputs.nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs system settings; };
       modules = [
         inputs.home-manager.nixosModules.home-manager
