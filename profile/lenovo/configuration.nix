@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, config, ... }: {
   imports = [
     # Import any modules or take them out
     ../../modules/desktop/niri.nix
