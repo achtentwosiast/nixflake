@@ -22,7 +22,8 @@
   hardware.graphics.enable = true;
   /* Compressed memory */
   services.zram-generator.enable = true;
-  services.xserver.xkb.layout = "latam";
+  services.xserver.xkb.layout = "es";
+  services.xserver.xkb.variant = "nodeadkeys";
   hardware.bluetooth = {
    enable = true;
    settings = {

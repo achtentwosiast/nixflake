@@ -19,6 +19,7 @@ in{
     steamcmd
     qdl
     bash-completion
+    sbcl
   ];
   # Please see https://search.nixos.org/packages to see which packages are available
 }
