@@ -34,9 +34,10 @@
       specialArgs = { inherit inputs system settings; };
       modules = [
         inputs.home-manager.nixosModules.home-manager
-        ./profile/lenovo/hardware.nix
-        ./profile/lenovo/configuration.nix
+        ./profile/mac/hardware.nix
+        ./profile/mac/configuration.nix
         ./compose.nix
+	inputs.nixos-hardware.nixosModules.apple-t2
       ];
     };
   };

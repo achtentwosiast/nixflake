@@ -1,7 +1,7 @@
 # Make sure to add this to your bookmarks: https://search.nixos.org/options
 # This is where common options are set so you don't have to repeat yourself across files
 { settings, config,  ... }: {
-  networking.hostName = "lubeck";
+  networking.hostName = "bremen";
   system.stateVersion = "26.05";
   time.timeZone = settings.timeZone;
 
@@ -13,7 +13,7 @@
   users.users.${settings.account.name} = {
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" ];
-    hashedPassword = "$6$QPhbJE.VVYrE2kOE$FGMHoc4e1SHnZeAVprfRZrqRNbLIicejkPrLMHohzHpjJl1wahz3v/zhJoavNAp3ulbPqc2ar51LwqfQEUs5r0";
+    hashedPassword = "";
   };
   console.useXkbConfig = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
