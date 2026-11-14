@@ -8,7 +8,6 @@
   ];
   # One line to change the kernel, comment out to use LTS
   # boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.kernelParams = [ ];
   boot.blacklistedKernelModules = [ "nouveau" ];
   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
     hardware.nvidia = {
