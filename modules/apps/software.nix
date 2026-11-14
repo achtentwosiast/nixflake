@@ -17,6 +17,7 @@ in{
     blueman
     pwvucontrol
     awww
+    plan9port
   ];
   # Check https://search.nixos.org/packages to see which packages are available
 }
